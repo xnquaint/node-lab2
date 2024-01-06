@@ -1,13 +1,13 @@
 export function GET(req, res) {
   res.writeHead(200, { "Content-Type": "application/json" });
-  res.end(JSON.stringify({ message: "Welcome to the route2!" }));
+  res.end(JSON.stringify({ message: "Welcome to the root route!" }));
 }
 
 export function POST(req, res, body) {
   res.writeHead(200, { "Content-Type": "application/json" });
   res.end(
     JSON.stringify({
-      message: "POST request received at route2",
+      message: "POST request received at root route",
       data: body,
     }),
   );
